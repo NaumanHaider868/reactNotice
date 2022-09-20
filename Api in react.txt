@@ -1,0 +1,19 @@
+---- Api in react
+
+
+1. Api ko hum kasi jaga par data ko call karna ka liya use karta ha
+
+constructor(){
+        super();
+        this.state={
+            users:null
+        }
+    }
+    
+componentDidMount(){
+        fetch("https://reqres.in/api/users").then((resp)=>{
+            resp.json().then((result)=>{
+                this.setState({users:result.data})
+            })
+        })
+}

@@ -1,0 +1,58 @@
+---- Components in React
+
+What are Components?
+Why we use Components?
+Types of Components?
+Functional
+class
+Syntax (code of mini project)
+
+
+1. ap ka pas ak navigation bar ha apna as ko 5 page par use karna ha to ap ko as ka code ko
+   5 bar copy kar ka har page par paste karna hoga as kam ko short karna ka liya hum Components ko use karta ha as ma hum ak Components banta ha to aro jas jaga as ki
+   saro rat hoti ha vaha as ko call kar lata ha
+
+2. Components ka phala word capital hoga
+
+
+3. Component ki two  types ha 
+
+   a. Class Component
+   b. Function Component
+
+
+
+
+import React from 'react';
+
+function Componet() {
+    return <h1>This is function</h1>
+    
+}
+
+export default Componet;
+
+
+4. ya ak function Component ka syntax ha Componet ko use karna sa phala hum ko react ko
+   import karvana hota ha
+
+
+5. apna agar function componet bana ha to function ko use kara agar apna class compoent bana
+   ha to class ko use kara
+
+6. return ka bagar ap ki value run nahi hogi
+
+7. agar apna ak sa zada value ko print kar valana ha to div ko use karna hoga as liya ka
+   react ma ap ak value ko return kava sakta ha as liya hum  div ko use karaga bashak
+   ap div ma 10000 value ko lakha vo run ho jagi lakin return ma ak sa zada value run nahi hoti
+
+
+8. componet ko lakna ka bad apna as ko export bi karva na ha as ka syntax
+   
+   export default name;
+
+
+9. jab apna componet bana liya ha to as ko file ma export bi karvna para ga jas ma ap na as
+   ko use karna ha as ka liya syntax
+
+   import Componet from './Componet';

@@ -1,0 +1,12 @@
+---- Mounting in react
+
+1. Mounting is the process of creating an element and inserting it in a DOM tree.
+
+
+Following methods are called in the following order when an instance of a component is being
+created and inserted into the DOM.
+
+a- constructor()
+b- static getDerivedStateFormProps()
+c- render()
+d- componentDidMount()

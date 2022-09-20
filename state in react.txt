@@ -1,0 +1,90 @@
+---- State in React
+
+
+a. Constructor
+b. getDerivedStateFormProps
+c. reder
+d. componentDidMount
+
+ya char methods ha jan sa state run hoti ha yani phale Constructor run hota ha bad ma
+getDerivedStateFormProps run hota ha as ka bad reder aro end par componentDidMount run
+hota ha
+
+1. ap sarif class componet ma state ko bana sakta ha aro ya asi class componet ma call hoga
+
+
+2. ap constructor ka sath aro constructor ka bagar bi state bana sakta ho
+
+
+---- State without Constructor
+
+
+3. class Student extends Component{
+    state ={
+        name: "Nauman"
+    };
+    render(){
+        return(
+            <h1>Hello, {this.state.name}</h1>
+        )
+	    }
+	}
+
+	export default Student;
+
+
+	ya hum na class componet banaya ha as ka ander hum na state ko call ki ha 
+
+
+4. state ko lakna ka liya syntax 
+	state ={
+	        name: "Nauman"
+	};
+
+
+5. state ko call karna ka liya syntax
+	{this.state.name}
+
+6. agar apna state ki value chang karni ha to as ka liya ap setState ak function ha ap as ko
+	use karaga value ko chang karna ka liya syntax this.setState({parameter ka name: new value});
+
+
+
+---- State with Constructor
+
+7. State with Constructor ko hum Constructor ka ander use karta ha
+
+8. Constructor(as ka ander props lakna ha) as kiya ka ap ko kabi props use karna par sakta ha
+
+9. constructor(props){
+        super(props);
+        this.state ={
+            name: "Nauman",
+            roll: this.props.roll
+        };
+    }
+
+    ya syntax ha asa state ko constructor ka ander use karta ha
+
+
+10. constructor ka andar jab apna state lakna ha as ko this.state lakna ha
+
+11. constructor ma value ko print karna ka tarika
+
+	render(){
+        return(
+            <h1>Hello, {this.state.name} {this.state.roll}</h1>   
+        	)
+    }
+
+12. jab ap na constructor ko call karni ha to 
+	super(agar apna constructor ka ander props likha ha to ya par bi lakna para ga props)
+
+
+
+---- changing in state with use setState()
+
+1. jab ap na ak state banaya ha to as ma changing ka liya hum ko setState ko use
+    kara ga Syntax
+
+    setState({jas jaga apna chang karna ha as ka name: new value})

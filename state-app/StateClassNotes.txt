@@ -1,0 +1,7 @@
+1. The state of a React class is a special property that controls the rendering of a page.
+2. In Class componet we use constructor to use state.
+3. State is an built-in componet in react class componet.
+4. In Class componet we use state with this because state is an object. This will refer to the object itself
+5. If we change state in react class componet we use setState().
+6. If we use variable for store data the componet is not updata.
+7. we store data in state.

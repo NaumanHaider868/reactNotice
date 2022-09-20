@@ -1,0 +1,33 @@
+---- Mounting in react
+
+1. Mounting is the process of creating an element and inserting it in a DOM tree.
+
+
+Following methods are called in the following order when an instance of a component is being
+created and inserted into the DOM.
+
+a- constructor()
+b- static getDerivedStateFormProps()
+c- render()
+d- componentDidMount()
+
+
+---- Construntor()
+
+1. jab ap react ki fill run hoti ha to sab sa phala construntor() function run hota ha ap
+	construntor ka andar state aro props dono run kar sakta ha par ak ak kar ka.
+
+---- static getDerivedStateFormProps()
+
+1. jab ap react ki fill ko run karta ha to 2nd number par static getDerivedStateFormProps()
+	run hota ha ap ka pass ak props aro state para ha to ya phala props aro state ko run kara
+	ga
+
+
+2. syntax : static getDerivedStateFormProps(state, props){
+	console.log(state, props)
+}
+	ya jo props aro state phala sa para hoga ya an ko run karaga
+
+3. jab ap as ko run karaga to ya error daga ya ap ko kaha ga jo ap ka state chang hova ha as
+	ka object da ya ap changing nai kara chata to return null kara.

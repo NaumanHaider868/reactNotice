@@ -1,0 +1,134 @@
+Thay have four types of lifecycle methods
+
+
+1. Mounting()
+2. Updating()
+3. Error Handling()
+4. Unmounting()
+
+---- Mounting in react
+
+1. Mounting is the process of creating an element and inserting it in a DOM tree.
+
+
+Following methods are called in the following order when an instance of a component is being
+created and inserted into the DOM.
+
+a- constructor()
+b- static getDerivedStateFormProps()
+c- render()
+d- componentDidMount()
+
+
+---- Construntor()
+
+1. jab ap react ki fill run hoti ha to sab sa phala construntor() function run hota ha ap
+	construntor ka andar state aro props dono run kar sakta ha par ak ak kar ka.
+
+---- static getDerivedStateFormProps()
+
+1. jab ap react ki fill ko run karta ha to 2nd number par static getDerivedStateFormProps()
+	run hota ha ap ka pass ak props aro state para ha to ya phala props aro state ko run kara
+	ga
+
+
+2. syntax : static getDerivedStateFormProps(state, props){
+	console.log(state, props)
+}
+	ya jo props aro state phala sa para hoga ya an ko run karaga
+
+3. jab ap as ko run karaga to ya error daga ya ap ko kaha ga jo ap ka state chang hova ha as
+	ka object da ya ap changing nai kara chata to return null kara.
+
+---- render()
+
+1. render lifecycle method ka ak part ha ap as ma html tag ko use kar sakta ha
+
+2. jab ap kisi file ko import karta ha to as ko tag ma lakna ka liya bi render use hota ha
+
+
+---- componetDidMount()
+
+1. componetDidMount life cycle ka part ha ya ak dafa hi call hota ha.
+
+
+2. as ko servar sa data get karna aro state par data set karna ka liya use karta ha.
+
+
+
+---- Updating()
+
+
+1. ap as ma state aro props ma changing kar sakta ha
+
+
+Updating Types
+
+a. static getDerivedStateFromProps()
+b. shouldComponentUpdate()
+c. render()
+d. getSnapshotBeforeUpdate()
+e. componentDidupdate()
+
+
+---- static getDerivedStateFromProps()
+
+
+
+
+---- shouldComponentUpdate()
+
+1. jab ap apna componet ma kohi changing karta ho to ap chata ho ya componet as jaga chala
+	aro as jaga na chala as ka liya hum shouldComponentUpdate() ko use karta ha
+
+
+2. agar ap render ko run kar vana chata ho to return true karaga agar nahi run karna chata
+	to return false kara ga
+
+
+
+---- getSnapshotBeforeUpdate()
+
+1. ya method tab chalta ha jab DOM update hona vala hota ha
+
+2. DOM ka update hova bagar apna kohi information lani ha to ap as ko use karo ga
+
+3. ya lifecycle method jo value send karta ha vo componetDidUpdate ma run hoti ha
+
+Syntax:
+
+getSnapshotBeforeUpdate(prevProps,prevState){
+	
+}
+
+
+---- componentDidupdate()
+
+
+1. agar shouldComponentUpdate return false kara to ya run nai hota.
+
+2. ya lifecycle method renter ma run nai hota.
+
+syntax:-
+		
+		componentDidUpdate(prevProps,prevState,snapshot){
+
+		}
+
+3. agar getsnapshotBeforeUpdate sa kohi return nai ata to as ka thrid parameter
+   undefined hota ha.
+
+
+
+---- Unmounting()
+
+1. kasi DOM masa jab ko componet remove hota ha as ko Unmounting kahta ha.
+
+---- Types of Unmounting
+
+a. componentWillUnmounting()
+
+
+---- componentWillUnmounting()
+
+1. ya method component ka Unmount hona sa phala run hota ha

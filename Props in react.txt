@@ -1,0 +1,56 @@
+---- Props in react
+
+
+1. ap ka pas ak file ha as ka dandar ak componet ha ap na as ko ak aro file ma print karva na
+	ha as ka liya hum props ko use kara ga
+
+
+2. function Componet({name}) {
+    return <h1>{name}</h1>
+	}
+
+	ya ak syntax ha as ka andar function ha as ka andar componet ha aro as ka andar componet 
+	name lakna ha name kohi bi ho sakta ha as ka bad hum na return h1 kiya ha aro componet ko
+	call kiya ha
+
+3. import React, {Component} from 'react'
+	import Componet from './Componet';
+
+	class Content extends Component{
+	    render(){
+	        return(
+	            <div>
+	                {/* <h1>Nouman</h1> */}
+	                <Componet name={"Nauman"} />
+	            </div>
+	           
+	        )
+	    }
+
+	    hum na ak aro componet banaya ha aro as ma hum na as ko export kiya ha ya ak class
+	    componet ha to hum as ko extends kara ga hum na as ma render ha as ka ander hum na
+	    return kiya ha div as ka ander < /> an ka ander hum componet ka name lakha ga aro 
+	    bad ma hum ={} as ka ander value daga jo ap na print kar vani ha
+
+
+
+
+4. 	import './App.css';
+
+	import Content from './Content';
+
+	function App() {
+	  return (
+	    <div className="App">
+	     
+	     <Content />
+	    </div>
+	  );
+	}
+
+	export default App;
+
+
+	ya syntax ha jaha par hum na content ko import kiya ha aro  function App() ma hum na
+	return ka ander div ha as ka ander hum na Content ko call ki ha ap na jas jaga ap ka
+	componet ko print karva na ha as ko vaha par ja ka </> an tags ma as ka name lakha ga

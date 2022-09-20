@@ -1,0 +1,6 @@
+1. In function componet State called useState.
+2. State is an object.
+3. we store data in state.
+4. If we use variable for store data the componet is not updata.
+5. useState is an hook.
+6. we use useState for mantain data and store.
